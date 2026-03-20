@@ -131,6 +131,3 @@ See `schema/service_now_model.md` for a more detailed model.
 - Add replay tooling for dead-letter records
 - Containerize the service and include CI
 - Add correlation logic to group related alerts into incidents
-
-## 2-minute video
-I cannot generate a real video file from here, but I included a ready-to-read 2-minute walkthrough script in `VIDEO_SCRIPT.md`.
