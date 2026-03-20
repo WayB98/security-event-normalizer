@@ -1,0 +1,20 @@
+[
+  {
+    "reason": "duplicate_dedupe_key",
+    "dedupe_key": "crowdstrike:cs-1001",
+    "source": "crowdstrike",
+    "record": {
+      "source": "crowdstrike",
+      "alert_id": "cs-1001",
+      "created_at": "2026-03-20T13:01:00Z",
+      "severity": "high",
+      "name": "Suspicious PowerShell",
+      "description": "Duplicate of same alert id.",
+      "behavior": "execution",
+      "status": "new",
+      "device": {
+        "hostname": "dc01"
+      }
+    }
+  }
+]

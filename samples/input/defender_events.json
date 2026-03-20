@@ -1,0 +1,28 @@
+[
+  {
+    "source": "microsoft_defender",
+    "id": "md-2001",
+    "alertCreationTime": "2026-03-20T13:03:00Z",
+    "severity": "severe",
+    "title": "Suspicious impossible travel",
+    "description": "User signed in from two countries within 10 minutes.",
+    "category": "credential_access",
+    "status": "active",
+    "computerDnsName": "payroll-app-01",
+    "accountName": "bway",
+    "serviceSource": "Microsoft Defender for Identity",
+    "mitreTechniques": ["Credential Access", "Valid Accounts"],
+    "determination": "malicious"
+  },
+  {
+    "source": "microsoft_defender",
+    "id": "md-2002",
+    "alertCreationTime": "bad-date",
+    "severity": "medium",
+    "title": "Malformed record example",
+    "description": "Should be routed to dead-letter storage.",
+    "category": "execution",
+    "status": "new",
+    "computerDnsName": "laptop-447"
+  }
+]

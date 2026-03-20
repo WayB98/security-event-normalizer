@@ -1,0 +1,50 @@
+[
+  {
+    "source": "crowdstrike",
+    "alert_id": "cs-1001",
+    "created_at": "2026-03-20T13:01:00Z",
+    "severity": "high",
+    "name": "Suspicious PowerShell",
+    "description": "Encoded command execution detected.",
+    "behavior": "execution",
+    "status": "new",
+    "device": {
+      "hostname": "dc01",
+      "ip": "10.0.1.10",
+      "user": "svc_admin"
+    },
+    "mitre": {
+      "tactic": "Execution",
+      "technique": "PowerShell"
+    },
+    "confidence": "high"
+  },
+  {
+    "source": "crowdstrike",
+    "alert_id": "cs-1001",
+    "created_at": "2026-03-20T13:01:00Z",
+    "severity": "high",
+    "name": "Suspicious PowerShell",
+    "description": "Duplicate of same alert id.",
+    "behavior": "execution",
+    "status": "new",
+    "device": {
+      "hostname": "dc01"
+    }
+  },
+  {
+    "source": "crowdstrike",
+    "alert_id": "cs-1002",
+    "created_at": "2026-03-20T13:10:00Z",
+    "severity": "medium",
+    "name": "Malicious hash blocked",
+    "description": "Blocked known-bad executable.",
+    "behavior": "malware",
+    "status": "resolved",
+    "device": {
+      "hostname": "laptop-447",
+      "ip": "10.0.5.44",
+      "user": "jdoe"
+    }
+  }
+]

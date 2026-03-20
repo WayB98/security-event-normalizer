@@ -1,0 +1,143 @@
+[
+  {
+    "event_uid": "c19a5e73ca21cb4b27c6",
+    "source": "crowdstrike",
+    "source_event_id": "cs-1001",
+    "event_type": "detection",
+    "title": "Suspicious PowerShell",
+    "description": "Encoded command execution detected.",
+    "category": "execution",
+    "severity": "high",
+    "severity_rank": 3,
+    "status": "open",
+    "occurred_at": "2026-03-20T13:01:00Z",
+    "ingested_at": "2026-03-20T18:53:39+00:00",
+    "asset_hostname": "dc01",
+    "asset_ip": "10.0.1.10",
+    "asset_criticality": "critical",
+    "user_name": "svc_admin",
+    "tactic": "Execution",
+    "technique": "PowerShell",
+    "raw_confidence": "high",
+    "dedupe_key": "crowdstrike:cs-1001",
+    "tags": [
+      "edr",
+      "endpoint",
+      "crowdstrike",
+      "priority-asset"
+    ],
+    "enrichment_notes": [
+      "Escalated visibility due to critical asset."
+    ],
+    "raw": {
+      "source": "crowdstrike",
+      "alert_id": "cs-1001",
+      "created_at": "2026-03-20T13:01:00Z",
+      "severity": "high",
+      "name": "Suspicious PowerShell",
+      "description": "Encoded command execution detected.",
+      "behavior": "execution",
+      "status": "new",
+      "device": {
+        "hostname": "dc01",
+        "ip": "10.0.1.10",
+        "user": "svc_admin"
+      },
+      "mitre": {
+        "tactic": "Execution",
+        "technique": "PowerShell"
+      },
+      "confidence": "high"
+    }
+  },
+  {
+    "event_uid": "713b495602f39b261733",
+    "source": "crowdstrike",
+    "source_event_id": "cs-1002",
+    "event_type": "detection",
+    "title": "Malicious hash blocked",
+    "description": "Blocked known-bad executable.",
+    "category": "malware",
+    "severity": "medium",
+    "severity_rank": 2,
+    "status": "closed",
+    "occurred_at": "2026-03-20T13:10:00Z",
+    "ingested_at": "2026-03-20T18:53:39+00:00",
+    "asset_hostname": "laptop-447",
+    "asset_ip": "10.0.5.44",
+    "asset_criticality": "medium",
+    "user_name": "jdoe",
+    "tactic": null,
+    "technique": null,
+    "raw_confidence": null,
+    "dedupe_key": "crowdstrike:cs-1002",
+    "tags": [
+      "edr",
+      "endpoint",
+      "crowdstrike"
+    ],
+    "enrichment_notes": [],
+    "raw": {
+      "source": "crowdstrike",
+      "alert_id": "cs-1002",
+      "created_at": "2026-03-20T13:10:00Z",
+      "severity": "medium",
+      "name": "Malicious hash blocked",
+      "description": "Blocked known-bad executable.",
+      "behavior": "malware",
+      "status": "resolved",
+      "device": {
+        "hostname": "laptop-447",
+        "ip": "10.0.5.44",
+        "user": "jdoe"
+      }
+    }
+  },
+  {
+    "event_uid": "be76269ba854171bc014",
+    "source": "microsoft_defender",
+    "source_event_id": "md-2001",
+    "event_type": "credential_access",
+    "title": "Suspicious impossible travel",
+    "description": "User signed in from two countries within 10 minutes.",
+    "category": "credential_access",
+    "severity": "critical",
+    "severity_rank": 4,
+    "status": "open",
+    "occurred_at": "2026-03-20T13:03:00Z",
+    "ingested_at": "2026-03-20T18:53:39+00:00",
+    "asset_hostname": "payroll-app-01",
+    "asset_ip": null,
+    "asset_criticality": "high",
+    "user_name": "bway",
+    "tactic": "Credential Access",
+    "technique": "Valid Accounts",
+    "raw_confidence": "malicious",
+    "dedupe_key": "microsoft_defender:md-2001",
+    "tags": [
+      "xdr",
+      "endpoint",
+      "microsoft-defender",
+      "identity"
+    ],
+    "enrichment_notes": [],
+    "raw": {
+      "source": "microsoft_defender",
+      "id": "md-2001",
+      "alertCreationTime": "2026-03-20T13:03:00Z",
+      "severity": "severe",
+      "title": "Suspicious impossible travel",
+      "description": "User signed in from two countries within 10 minutes.",
+      "category": "credential_access",
+      "status": "active",
+      "computerDnsName": "payroll-app-01",
+      "accountName": "bway",
+      "serviceSource": "Microsoft Defender for Identity",
+      "mitreTechniques": [
+        "Credential Access",
+        "Valid Accounts"
+      ],
+      "determination": "malicious"
+    }
+  }
+]

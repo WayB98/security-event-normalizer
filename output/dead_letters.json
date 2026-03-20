@@ -1,0 +1,16 @@
+[
+  {
+    "reason": "invalid_timestamp",
+    "record": {
+      "source": "microsoft_defender",
+      "id": "md-2002",
+      "alertCreationTime": "bad-date",
+      "severity": "medium",
+      "title": "Malformed record example",
+      "description": "Should be routed to dead-letter storage.",
+      "category": "execution",
+      "status": "new",
+      "computerDnsName": "laptop-447"
+    }
+  }
+]
